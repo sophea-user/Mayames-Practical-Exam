@@ -1,0 +1,308 @@
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+.navmenu {
+    display: flex;
+    list-style-type: none;
+}
+
+.navmenu li {
+    margin: 0 20px;
+}
+
+.navmenu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navmenu li a:hover {
+    color: #007bff;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon a {
+    color: #333;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.nav-icon a:hover {
+    color: #007bff;
+}
+
+.bx-menu {
+    display: none;
+}
+
+/* Main Home Section */
+.main-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+.main-text h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.main-text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.main-text p {
+    font-size: 18px;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+.main-btn {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.down-arrow .down {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Activities Section */
+.activities-section {
+    padding: 60px 50px;
+    background-color: #fff;
+}
+
+.center-text h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.center-text h2 span {
+    color: #007bff;
+}
+
+.activities .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.activity-item {
+    width: 48%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.activity-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.activity-details h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+}
+
+.activity-details h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 60px 50px;
+    background-color: #f9f9f9;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.profile .description {
+    max-width: 600px;
+}
+
+.profile h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    font-size: 25px;
+    margin-right: 20px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .main-home {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .main-text h1 {
+        font-size: 40px;
+    }
+
+    .activities .row {
+        flex-direction: column;
+    }
+
+    .activity-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navmenu {
+        display: none;
+    }
+
+    .nav-icon .bx-menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .nav-icon a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-text h1 {
+        font-size: 30px;
+    }
+
+    .main-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .profile .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile h2 {
+        font-size: 28px;
+    }
+
+    .profile p {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}
